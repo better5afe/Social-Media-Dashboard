@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DashboardHeader from './components/DashboardHeader';
+import DashboardMainStats from './components/DashboardMainStats';
+import DashboardOverview from './components/DashboardOverview';
+import Container from 'react-bootstrap/Container';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const App = () => {
+	return (
+		<Container className='wrapper' fluid>
+				<DashboardHeader />
+			<main>
+				<DashboardMainStats />
+				<DashboardOverview />
+			</main>
+		</Container>
+	);
+};
 
 export default App;
