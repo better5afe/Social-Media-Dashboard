@@ -1,0 +1,38 @@
+.card-box {
+	overflow: hidden;
+}
+
+.card-box::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	content: '';
+}
+
+#facebook::before {
+	background: var(--facebook);
+}
+
+#twitter::before {
+	background: var(--twitter);
+}
+
+#instagram::before {
+	background: var(--instagram);
+}
+
+#youtube::before {
+	background: var(--youtube);
+}
+
+.username,
+.indicator-time {
+	font-size: 12px;
+}
+
+.followers {
+	letter-spacing: 3px;
+}

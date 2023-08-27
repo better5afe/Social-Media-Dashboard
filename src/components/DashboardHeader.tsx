@@ -3,8 +3,6 @@ import { ThemeContext } from '../context/theme-context';
 import ModeToggler from './subcomponents/ModeToggler';
 import Container from 'react-bootstrap/Container';
 
-import './DashboardHeader.css';
-
 const DashboardHeader = () => {
 	const themeCtx = useContext(ThemeContext);
 

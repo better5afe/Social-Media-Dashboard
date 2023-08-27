@@ -1,4 +1,5 @@
-.dark-mode {
+.dark-mode,
+.dark-mode .followers-amount {
 	color: var(--white);
 }
 
@@ -28,4 +29,8 @@
 
 .dark-mode .main {
 	background: var(--bg-dark-blue);
+}
+
+.dark-mode .card-box {
+	background: var(--card-bg-blue);
 }

@@ -29,3 +29,7 @@
 .light-mode .main {
 	background: var(--white);
 }
+
+.light-mode .card-box {
+	background: var(--card-bg-grayish-blue);
+}
