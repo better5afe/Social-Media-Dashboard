@@ -1,0 +1,25 @@
+.toggler-btn {
+	position: relative;
+	height: 24px;
+	width: 50px;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	cursor: pointer;
+}
+
+.toggler-btn::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	transition: transform 0.3s ease-in-out;
+}
+
+.inactive::before {
+	transform: translateX(-26px);
+}

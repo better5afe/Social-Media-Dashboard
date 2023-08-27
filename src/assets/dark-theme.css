@@ -1,0 +1,31 @@
+.dark-mode {
+	color: var(--white);
+}
+
+.dark-mode .grayed-text {
+	color: var(--text-blue);
+}
+
+/* Header styles */
+
+.dark-mode .header {
+	background: var(--very-dark-blue);
+}
+
+.dark-mode .info-box {
+	border-bottom: 1px solid var(--text-blue);
+}
+
+.dark-mode .toggler-btn {
+	background: var(--dark-toggler);
+}
+
+.dark-mode .toggler-btn::before {
+	background: var(--card-bg-blue);
+}
+
+/* Main styles */
+
+.dark-mode .main {
+	background: var(--bg-dark-blue);
+}

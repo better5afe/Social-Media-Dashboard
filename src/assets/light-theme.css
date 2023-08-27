@@ -1,0 +1,31 @@
+.light-mode {
+	color: var(--text-dark-blue);
+}
+
+.light-mode .grayed-text {
+	color: var(--text-grayish-blue);
+}
+
+/* Header styles */
+
+.light-mode .header {
+	background: var(--bg-pale-blue);
+}
+
+.light-mode .info-box {
+	border-bottom: 1px solid var(--text-grayish-blue);
+}
+
+.light-mode .toggler-btn {
+	background: var(--light-toggler);
+}
+
+.light-mode .toggler-btn::before {
+	background: var(--bg-pale-blue);
+}
+
+/* Main styles */
+
+.light-mode .main {
+	background: var(--white);
+}
