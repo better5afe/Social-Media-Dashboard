@@ -3,7 +3,7 @@ import { ThemeContext } from '../context/theme-context';
 import ModeToggler from './subcomponents/ModeToggler';
 import Container from 'react-bootstrap/Container';
 
-import './DashboardHeader.css'
+import './DashboardHeader.css';
 
 const DashboardHeader = () => {
 	const themeCtx = useContext(ThemeContext);
@@ -12,13 +12,13 @@ const DashboardHeader = () => {
 
 	return (
 		<header className='header'>
-			<Container className='header-container'>
-				<div className='info-box pt-4 pb-3 mb-3'>
+			<Container className='header-container d-xl-flex justify-content-between align-items-end'>
+				<div className='info-box pt-4 pb-3 mb-3 mb-xl-0'>
 					<h1 className='mb-0 fs-3 fw-bold'>Social Media Dashboard</h1>
 					<p className='grayed-text mb-0 fw-bold'>Total Followers: 23,004</p>
 				</div>
 				<div className='d-flex justify-content-between align-items-center pb-4'>
-					<p className='grayed-text mb-0 fw-bold'>{switchToMode}</p>
+					<p className='grayed-text mb-0 me-xl-2 fw-bold'>{switchToMode}</p>
 					<ModeToggler />
 				</div>
 			</Container>

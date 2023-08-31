@@ -52,6 +52,10 @@ main {
 		font-size: 16px;
 	}
 
+	.main {
+		top: 140px;
+	}
+
 	.card-title {
 		font-size: 14px;
 	}

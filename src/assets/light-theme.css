@@ -7,8 +7,6 @@
 	color: var(--text-grayish-blue);
 }
 
-/* Header styles */
-
 .light-mode .header {
 	background: var(--bg-pale-blue);
 }
@@ -25,8 +23,12 @@
 	background: var(--bg-pale-blue);
 }
 
-/* Main styles */
-
 .light-mode .card-box {
 	background: var(--card-bg-grayish-blue);
+}
+
+@media(min-width: 1400px) {
+    .light-mode .info-box {
+        border-bottom: none;
+    }
 }

@@ -11,8 +11,6 @@
 	color: var(--text-blue);
 }
 
-/* Header styles */
-
 .dark-mode .header {
 	background: var(--very-dark-blue);
 }
@@ -29,8 +27,12 @@
 	background: var(--card-bg-blue);
 }
 
-/* Main styles */
-
 .dark-mode .card-box {
 	background: var(--card-bg-blue);
+}
+
+@media(min-width: 1400px) {
+    .dark-mode .info-box {
+        border-bottom: none;
+    }
 }
