@@ -1,4 +1,5 @@
 .light-mode {
+	background: var(--white);
 	color: var(--text-dark-blue);
 }
 
@@ -25,10 +26,6 @@
 }
 
 /* Main styles */
-
-.light-mode .main {
-	background: var(--white);
-}
 
 .light-mode .card-box {
 	background: var(--card-bg-grayish-blue);

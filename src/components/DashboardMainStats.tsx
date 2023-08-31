@@ -1,23 +1,26 @@
 import MainCard from './subcomponents/MainCard';
-import { mainStats } from '../utils/dummy-data';
+import Container from 'react-bootstrap/Container';
 
-import './DashboardMainStats.css';
+import { mainStats } from '../utils/dummy-data';
 
 const DashboardMainStats = () => {
 	return (
-		<section className='main-stats'>
-			{mainStats.map((mainStat) => (
-				<MainCard
-					key={mainStat.id}
-					id={mainStat.id}
-					socialMedia={mainStat.socialMedia}
-					username={mainStat.username}
-					followersAmt={mainStat.followersAmt}
-					followersAmtDiff={mainStat.followersAmtDiff}
-					difference={mainStat.difference}
-				/>
-			))}
-		</section>
+		<Container className='container mb-5'>
+			<section className='main-stats p-2'>
+				<div className='row'>
+					{mainStats.map((mainStat) => (
+						<MainCard
+							key={mainStat.id}
+							socialMedia={mainStat.socialMedia}
+							username={mainStat.username}
+							followersAmt={mainStat.followersAmt}
+							followersAmtDiff={mainStat.followersAmtDiff}
+							difference={mainStat.difference}
+						/>
+					))}
+				</div>
+			</section>
+		</Container>
 	);
 };
 
