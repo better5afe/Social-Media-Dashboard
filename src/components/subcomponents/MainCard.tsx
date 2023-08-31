@@ -22,14 +22,15 @@ const MainCard: React.FC<MainCardProps> = ({
 	return (
 		<div className='col-12 col-xl-3 px-xl-1'>
 			<div
+				id={socialMedia}
 				className='card-box position-relative py-4 mb-4 mb-xl-0 rounded'
 			>
 				<div className='d-flex justify-content-center align-items-center flex-column'>
 					<div className='d-flex align-items-center'>
 						{icons.logo}
-						<h3 className='card-title grayed-text mb-0 fw-bold'>
+						<h2 className='card-title grayed-text mb-0 fw-bold'>
 							&nbsp;&nbsp;@{username}
-						</h3>
+						</h2>
 					</div>
 					<p className='followers-amount display-3 mb-0 mt-3 fw-bold'>
 						{followersAmt}
