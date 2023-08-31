@@ -36,7 +36,7 @@ const OverviewCard: React.FC<OverviewCardProps> = ({
 									difference === 'positive' ? 'positive' : 'negative'
 								}`}
 							>
-								&nbsp;{overviewDiff} Today
+								&nbsp;{overviewDiff}
 							</p>
 						</div>
 					</div>
